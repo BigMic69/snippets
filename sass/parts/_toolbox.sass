@@ -1,0 +1,135 @@
+/*---------- FONTS/TEXT ----------*/
+@mixin text-style-primary
+  color: #fff
+  font-family: $font-2
+  letter-spacing: 1.25px
+  +b-rad(5px)
+
+$font-1: 'Droid Serif', serif
+$font-2: 'Ubuntu', sans-serif
+$font-3: 'Playfair Display', serif
+
+@mixin text-bellefair
+  font-family: 'Bellefair', serif
+@mixin text-doppio-one
+  font-family: 'Doppio One', sans-serif
+@mixin text-cinzel
+  font-family: 'Cinzel Decorative', cursive
+@mixin text-oregano
+  font-family: 'Oregano', cursive
+
+@mixin text-para-format
+  color: $clr-secondary
+  font-size: 1.25em
+  line-height: 1.5em
+  background: #fff
+  padding: 10px
+  +b-rad(10px)
+
+@mixin menu-style
+  +no-cush
+  list-style: none
+  text-decoration: none
+
+
+/*---------- COLORS ----------*/
+@mixin box-style
+  background: $clr-secondary-alpha
+  border: 1px solid $clr-primary-alpha
+  border-radius: 5px
+
+$clr-primary: rgb(75, 231, 18)
+$clr-primary-alpha: rgba(75, 231, 18, .6)
+$clr-secondary: rgb(26, 26, 26)
+$clr-secondary-alpha: rgba(25, 25, 25, .8)
+$clr-alternate: #6c6b6a
+$clr-2nd-alternate: #9A978F
+
+$clr-light-grey: #dddddd
+$clr-light-grey-alpha: rgba(221, 221, 221, 0.5)
+$clr-med-grey: #333333
+$clr-med-grey-alpha: rgba(#333333, 0.50)
+$clr-dark-blue: #0c0e16
+$clr-dark-blue-alpha: rgba(#0c0e16, 0.15)
+$clr-orange: #e33d00
+$clr-orange-alpha: rgba(#e33d00, 0.5)
+
+@mixin border-outline
+  border: thin solid $clr-primary
+@mixin text-shadow-white-xs
+  text-shadow: .5px .5px $clr-secondary-alpha
+@mixin text-shadow-white-sm
+  text-shadow: 1px 1px #fff
+@mixin box-shadow-white-sm
+  box-shadow: 1px 1px 3px #f1f1f1
+@mixin container-shadow-1($color)
+  box-shadow: 2px 2px 4px 1px $color
+
+
+/*---------- BG IMAGE ----------*/
+@mixin bg-cover-fixed
+  background:
+    size: cover
+    position: center
+    attachment: fixed
+
+
+
+/*---------- MARGIN/PADDING ----------*/
+@mixin cush($margin, $padding)
+  margin: $margin
+  padding: $padding
+  box-sizing: border-box
+@mixin no-cush
+  margin: 0 auto
+  padding: 0
+  box-sizing: border-box
+@mixin cush-primary
+  padding: 5px
+  font-size: 1.25
+@mixin space
+  +cush(10vh auto, 0)
+
+@mixin row-flex
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+
+
+/*---------- CONTAINER ----------*/
+@mixin box-config($width, $height, $margin, $padding)
+  width: $width
+  height: $height
+  margin: $margin
+  padding: $padding
+  box-sizing: border-box
+@mixin box-fluid
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+@mixin b-rad($radius)
+  border-radius: $radius
+
+
+
+/*---------- TRANSITIONS ----------*/
+@mixin trans-0
+  transition: .3s ease .05s
+@mixin trans-1
+  transition: .8s ease .05s
+@mixin trans-2
+  transition: 1.2s ease .05s
+@mixin trans($property)
+  transition:
+    property: $property
+    duration: 1s
+    delay: .1s
+    timing-function: ease-in-out
+
+@mixin move($origin, $property)
+  transform-origin: $origin
+  transform: $property
