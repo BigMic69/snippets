@@ -1,0 +1,45 @@
+.nav-pills-container
+  margin: 3em 5%
+  padding: 0
+  background: #444
+  color: #fff
+  ul
+    background: #c4c4c4
+
+.tab-content
+  padding: 5px
+  background-image: url(../img/mother-board-1.png)
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  h3
+    margin: 1em 0
+    font-size: 1.5em
+  p
+    +pos-center-90
+    background: #d5d5d5
+    color: #333
+    font-size: 1em
+  .home-img-container
+    //width: 80%
+    margin: 2em 15%
+    @media (min-width: 769px)
+      margin: 2em 20%
+    img
+      width: 100%
+      height: auto
+  .grid-menu2
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: auto
+    grid-gap: 10%
+    margin: 1em 5%
+    .btn
+      background: #444
+      +trans-0
+      &:hover
+        background: #d7d7d7
+
+
+#myCarousel
+  margin: 20vh 5%

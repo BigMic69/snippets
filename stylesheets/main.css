@@ -66,3 +66,133 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/*---------- FONTS/TEXT ---------- */
+/*---------- COLORS ---------- */
+/*---------- BG IMAGE ---------- */
+/*---------- MARGIN/PADDING ---------- */
+/*---------- CONTAINER ---------- */
+/*---------- TRANSITIONS ---------- */
+/* line 1, ../sass/parts/_base.sass */
+* {
+  letter-spacing: 1.125px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/parts/_base.sass */
+body {
+  line-height: 2em;
+}
+
+/* line 9, ../sass/parts/_base.sass */
+h1 {
+  font-size: 2em;
+}
+
+/* line 12, ../sass/parts/_base.sass */
+section {
+  border-bottom: 1px solid #333;
+}
+
+/* line 1, ../sass/parts/_about.sass */
+.nav-pills-container {
+  margin: 3em 5%;
+  padding: 0;
+  background: #444;
+  color: #fff;
+}
+/* line 6, ../sass/parts/_about.sass */
+.nav-pills-container ul {
+  background: #c4c4c4;
+}
+
+/* line 9, ../sass/parts/_about.sass */
+.tab-content {
+  padding: 5px;
+  background-image: url(../img/mother-board-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 15, ../sass/parts/_about.sass */
+.tab-content h3 {
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+/* line 18, ../sass/parts/_about.sass */
+.tab-content p {
+  margin: 2em 5%;
+  background: #d5d5d5;
+  color: #333;
+  font-size: 1em;
+}
+/* line 23, ../sass/parts/_about.sass */
+.tab-content .home-img-container {
+  margin: 2em 15%;
+}
+@media (min-width: 769px) {
+  /* line 23, ../sass/parts/_about.sass */
+  .tab-content .home-img-container {
+    margin: 2em 20%;
+  }
+}
+/* line 28, ../sass/parts/_about.sass */
+.tab-content .home-img-container img {
+  width: 100%;
+  height: auto;
+}
+/* line 31, ../sass/parts/_about.sass */
+.tab-content .grid-menu2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10%;
+  margin: 1em 5%;
+}
+/* line 37, ../sass/parts/_about.sass */
+.tab-content .grid-menu2 .btn {
+  background: #444;
+  transition: 0.3s ease 0.05s;
+}
+/* line 40, ../sass/parts/_about.sass */
+.tab-content .grid-menu2 .btn:hover {
+  background: #d7d7d7;
+}
+
+/* line 44, ../sass/parts/_about.sass */
+#myCarousel {
+  margin: 20vh 5%;
+}
+
+/* line 1, ../sass/parts/_services.sass */
+.services-container {
+  padding: 10px;
+}
+/* line 3, ../sass/parts/_services.sass */
+.services-container h1 {
+  margin: 0 auto 2em;
+}
+
+/* line 6, ../sass/parts/_services.sass */
+.modal-container {
+  border: 1px solid #000;
+}
+/* line 8, ../sass/parts/_services.sass */
+.modal-container h2 {
+  font-size: 1.5em;
+}
+/* line 10, ../sass/parts/_services.sass */
+.modal-container p {
+  margin: 2em 5%;
+}
+/* line 12, ../sass/parts/_services.sass */
+.modal-container button {
+  color: #e7e7e7;
+  background: #333;
+}
+/* line 14, ../sass/parts/_services.sass */
+.modal-container button:hover {
+  color: #333;
+  background: #e7e7e7;
+}

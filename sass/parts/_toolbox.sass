@@ -54,6 +54,13 @@ $clr-dark-blue-alpha: rgba(#0c0e16, 0.15)
 $clr-orange: #e33d00
 $clr-orange-alpha: rgba(#e33d00, 0.5)
 
+@mixin clr-scheme-1st
+  color: #e7e7e7
+  background: #333
+@mixin clr-scheme-2nd
+  color: #333
+  background: #e7e7e7
+
 @mixin border-outline
   border: thin solid $clr-primary
 @mixin text-shadow-white-xs
@@ -89,6 +96,8 @@ $clr-orange-alpha: rgba(#e33d00, 0.5)
   font-size: 1.25
 @mixin space
   +cush(10vh auto, 0)
+@mixin pos-center-90
+  margin: 2em 5%
 
 @mixin row-flex
   display: flex
