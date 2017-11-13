@@ -1,0 +1,55 @@
+.contact-container
+  //min-height: 100vh
+  margin: 0 auto
+  padding: 10px
+  background-image: url(../img/wp-blue-ice.png)
+  background-size: 25% auto
+  background-position: 95% 100px
+  background-repeat: no-repeat
+  background-attachment: fixed
+  h1
+    margin-bottom: 100px
+    text-shadow: 1px 1px #333
+  #box1
+    width: 400px
+    height: 300px
+    margin: 4em 0
+    +clr-scheme-1st
+    border: thick solid #e6e6e6
+    //transform-origin: left
+    +trans-3
+  #btn1
+    margin: 2em auto
+    padding: .5em 1em
+    color: #e6e6e6
+    background: #333
+    cursor: pointer
+    text-decoration: none !important
+    &:hover
+      +clr-scheme-2nd
+
+.light
+  width: 600px
+  border: thick solid #333
+  transform: scale(.8)
+
+.hello
+  margin-top: 3em
+
+#demo1,
+#demo2
+  color: rgb(41, 222, 26) !important
+
+button
+  margin: 2em auto
+  padding: .5em 1em
+  +clr-scheme-1st
+  cursor: pointer
+  text-decoration: none !important
+  &:hover
+    +clr-scheme-2nd
+
+.contact-section img
+  width: 50px
+  height: 50px
+  +trans-2

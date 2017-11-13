@@ -83,16 +83,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 6, ../sass/parts/_base.sass */
 body {
   line-height: 2em;
+  background: #444;
+  color: #d5d5d5;
 }
 
-/* line 9, ../sass/parts/_base.sass */
+/* line 11, ../sass/parts/_base.sass */
 h1 {
   font-size: 2em;
 }
 
-/* line 12, ../sass/parts/_base.sass */
+/* line 14, ../sass/parts/_base.sass */
 section {
   border-bottom: 1px solid #333;
+}
+
+/* line 17, ../sass/parts/_base.sass */
+.intro-section {
+  min-height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url(../img/fred_1.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 27, ../sass/parts/_base.sass */
+.about-section {
+  min-height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url(../img/car-1.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 37, ../sass/parts/_base.sass */
+.services-section {
+  min-height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url(../img/white-black-car-1.png);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #333;
+}
+
+/* line 48, ../sass/parts/_base.sass */
+.contact-section {
+  margin-bottom: 100px;
+  padding: 120px 0;
+  text-align: center;
+  background: #666;
 }
 
 /* line 1, ../sass/parts/_about.sass */
@@ -195,4 +242,84 @@ section {
 .modal-container button:hover {
   color: #333;
   background: #e7e7e7;
+}
+
+/* line 1, ../sass/parts/_contact.sass */
+.contact-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-image: url(../img/wp-blue-ice.png);
+  background-size: 25% auto;
+  background-position: 95% 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* line 10, ../sass/parts/_contact.sass */
+.contact-container h1 {
+  margin-bottom: 100px;
+  text-shadow: 1px 1px #333;
+}
+/* line 13, ../sass/parts/_contact.sass */
+.contact-container #box1 {
+  width: 400px;
+  height: 300px;
+  margin: 4em 0;
+  color: #e7e7e7;
+  background: #333;
+  border: thick solid #e6e6e6;
+  transition: 2s ease 0.05s;
+}
+/* line 21, ../sass/parts/_contact.sass */
+.contact-container #btn1 {
+  margin: 2em auto;
+  padding: 0.5em 1em;
+  color: #e6e6e6;
+  background: #333;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+/* line 28, ../sass/parts/_contact.sass */
+.contact-container #btn1:hover {
+  color: #333;
+  background: #e7e7e7;
+}
+
+/* line 31, ../sass/parts/_contact.sass */
+.light {
+  width: 600px;
+  border: thick solid #333;
+  transform: scale(0.8);
+}
+
+/* line 36, ../sass/parts/_contact.sass */
+.hello {
+  margin-top: 3em;
+}
+
+/* line 39, ../sass/parts/_contact.sass */
+#demo1,
+#demo2 {
+  color: #29de1a !important;
+}
+
+/* line 43, ../sass/parts/_contact.sass */
+button {
+  margin: 2em auto;
+  padding: 0.5em 1em;
+  color: #e7e7e7;
+  background: #333;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+/* line 49, ../sass/parts/_contact.sass */
+button:hover {
+  color: #333;
+  background: #e7e7e7;
+}
+
+/* line 52, ../sass/parts/_contact.sass */
+.contact-section img {
+  width: 50px;
+  height: 50px;
+  transition: 1.2s ease 0.05s;
 }
