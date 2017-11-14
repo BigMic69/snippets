@@ -92,12 +92,17 @@ h1 {
   font-size: 2em;
 }
 
-/* line 14, ../sass/parts/_base.sass */
+/* line 13, ../sass/parts/_base.sass */
+p {
+  font-size: 1.25em;
+}
+
+/* line 16, ../sass/parts/_base.sass */
 section {
   border-bottom: 1px solid #333;
 }
 
-/* line 17, ../sass/parts/_base.sass */
+/* line 19, ../sass/parts/_base.sass */
 .intro-section {
   min-height: 100%;
   padding-top: 150px;
@@ -109,7 +114,7 @@ section {
   background-attachment: fixed;
 }
 
-/* line 27, ../sass/parts/_base.sass */
+/* line 29, ../sass/parts/_base.sass */
 .about-section {
   min-height: 100%;
   padding-top: 150px;
@@ -121,7 +126,7 @@ section {
   background-attachment: fixed;
 }
 
-/* line 37, ../sass/parts/_base.sass */
+/* line 39, ../sass/parts/_base.sass */
 .services-section {
   min-height: 100%;
   padding-top: 150px;
@@ -134,12 +139,22 @@ section {
   background: #333;
 }
 
-/* line 48, ../sass/parts/_base.sass */
+/* line 50, ../sass/parts/_base.sass */
 .contact-section {
   margin-bottom: 100px;
   padding: 120px 0;
   text-align: center;
   background: #666;
+}
+
+/* line 1, ../sass/parts/_intro.sass */
+.jsTop {
+  margin: 3em auto;
+}
+
+/* line 4, ../sass/parts/_intro.sass */
+#fbCover {
+  padding: 5px 10px;
 }
 
 /* line 1, ../sass/parts/_about.sass */
@@ -223,25 +238,69 @@ section {
 
 /* line 6, ../sass/parts/_services.sass */
 .modal-container {
+  color: #333;
+  background: #d6d6d6;
   border: 1px solid #000;
 }
-/* line 8, ../sass/parts/_services.sass */
+/* line 10, ../sass/parts/_services.sass */
 .modal-container h2 {
+  margin-top: 1em;
   font-size: 1.5em;
 }
-/* line 10, ../sass/parts/_services.sass */
+/* line 13, ../sass/parts/_services.sass */
 .modal-container p {
-  margin: 2em 5%;
+  margin: 1em 5%;
 }
-/* line 12, ../sass/parts/_services.sass */
+/* line 15, ../sass/parts/_services.sass */
 .modal-container button {
+  margin: 1em auto;
   color: #e7e7e7;
   background: #333;
 }
-/* line 14, ../sass/parts/_services.sass */
+/* line 18, ../sass/parts/_services.sass */
 .modal-container button:hover {
   color: #333;
   background: #e7e7e7;
+}
+
+/* line 21, ../sass/parts/_services.sass */
+.modal-content {
+  color: #333;
+}
+/* line 23, ../sass/parts/_services.sass */
+.modal-content .modal-header {
+  background: #444;
+}
+/* line 25, ../sass/parts/_services.sass */
+.modal-content .modal-header .close {
+  color: #fff !important;
+}
+/* line 27, ../sass/parts/_services.sass */
+.modal-content .modal-header .modal-title {
+  color: #e8e8e8 !important;
+  font-size: 1.5em;
+}
+/* line 31, ../sass/parts/_services.sass */
+.modal-content .modal-body p {
+  width: 80%;
+  margin: 1em auto;
+  font-weight: 500;
+}
+/* line 35, ../sass/parts/_services.sass */
+.modal-content .modal-footer {
+  background: #444;
+  height: 70px;
+}
+/* line 38, ../sass/parts/_services.sass */
+.modal-content .modal-footer button {
+  margin-top: 0;
+}
+
+/* line 42, ../sass/parts/_services.sass */
+.modal-img-container img {
+  width: 80%;
+  margin: auto;
+  box-shadow: 2px 2px 5px #333;
 }
 
 /* line 1, ../sass/parts/_contact.sass */
@@ -318,7 +377,13 @@ button:hover {
 }
 
 /* line 52, ../sass/parts/_contact.sass */
-.contact-section img {
+.img-container {
+  width: 200px;
+  height: 200px;
+  margin: 1em auto;
+}
+/* line 56, ../sass/parts/_contact.sass */
+.img-container #logo3 {
   width: 50px;
   height: 50px;
   transition: 1.2s ease 0.05s;

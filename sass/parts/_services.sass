@@ -4,12 +4,42 @@
     margin: 0 auto 2em
 
 .modal-container
+  color: #333
+  background: #d6d6d6
   border: 1px solid #000
   h2
+    margin-top: 1em
     font-size: 1.5em
   p
-    +pos-center-90
+    margin: 1em 5%
   button
+    margin: 1em auto
     +clr-scheme-1st
     &:hover
       +clr-scheme-2nd
+
+.modal-content
+  color: #333
+  .modal-header
+    background: #444
+    .close
+      color: #fff !important
+    .modal-title
+      color: #e8e8e8 !important
+      font-size: 1.5em
+  .modal-body
+    p
+      width: 80%
+      margin: 1em auto
+      font-weight: 500
+  .modal-footer
+    background: #444
+    height: 70px
+    button
+      margin-top: 0
+
+.modal-img-container
+  img
+    width: 80%
+    margin: auto
+    box-shadow: 2px 2px 5px #333
