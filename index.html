@@ -83,6 +83,14 @@
           <p id="p1">What up doe???</p>
           <hr>
           <button type="button" name="button" onclick="bgChange">Change Background</button>
+          <p>I need to come back to this one.</p>
+          <hr>
+        </div>
+
+        <div class="display-date-container">
+          <button onclick="clickTime()" type="button" name="button">Display Time & Date</button>
+          <p id="showTime"></p>
+          <hr>
         </div>
 
         <div class="col-lg-12 pic-link-container">
@@ -91,6 +99,11 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
           </ul>
+        </div>
+
+        <div class="js-browser-location-container">
+          <h3>The window.location object</h3>
+          <p id="bLocation"></p>
         </div>
       </div>
     </div>
@@ -114,10 +127,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, minus eaque commodi architecto, iste corporis explicabo in earum molestiae ad, voluptatem dolores beatae et repellat assumenda magni laborum qui ea.</p>
             <p>The fb-cover below has been changed using JavaScript.</p>
 
-            <button type="button" name="button" onclick="fbHide()">HIDE BANNER BANNER</button>
+            <button type="button" name="button" id="fbHide">HIDE BANNER BANNER</button>
+            <p>I need to come back to this one.</p>
 
             <div class="home-img-container">
-              <img id="fbCover" class="img-responsive" src="./img/facebook-cover-1.png" alt=""> <!-- Changed FB-COVER in JS file -->
+              <img mouseOver="bannerChange1()" mouseOut="bannerChange2()" id="fbCover1" class="img-responsive" src="./img/facebook-cover-2.png" alt=""> <!-- Changed FB-COVER in JS file -->
             </div>
             <!-- /home-img-container END -->
           </div>

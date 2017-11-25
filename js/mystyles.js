@@ -49,21 +49,14 @@ function mouseOut() {
 
 
 /* START JS-TOP */
-document.getElementById('p1').innerHTML = 'This paragraph was changed from "What up doe???" to all of this.'
+document.getElementById('p1').innerHTML = 'This paragraph was changed from "What up doe???" to all of this.';
 /* END JS-TOP */
 
 /* START FB-COVER CHANGE */
-// document.getElementById('fbCover').src = 'img/facebook-cover-3.png';
+document.getElementById('fbCover').src = 'img/facebook-cover-3.png';
 /* END FB-COVER CHANGE */
 
 
 /* START HIDE FB-COVER */
-function fbHide() {
-    var x = document.getElementById("fbCover");
-    if (x.style.display === "none") {
-        x.style display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+
 /* END HIDE FB-COVER */
